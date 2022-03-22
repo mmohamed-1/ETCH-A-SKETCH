@@ -1,18 +1,18 @@
 # ETCH-A-SKETCH
 
-Project to create something like Etch A Sketch using only HTML, CSS and Vanilla JS.
-
-Built with Technologies
+Project to create Etch A Sketch using only HTML, CSS and Vanilla JS.
 
 ---
+
+Built with Technologies
 
 HTML
 CSS
 JS
 
-Tools
-
 ---
+
+Tools
 
 Visual Studio Code
 Linux terminal
