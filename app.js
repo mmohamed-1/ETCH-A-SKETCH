@@ -18,7 +18,7 @@ function makeGrid(x) {
     container.style.gridTemplateColumns = `repeat(${x}, 1fr)`;
 
     btn.addEventListener("click", function () {
-      div.style.backgroundColor = "white";
+      div.style.backgroundColor = "bisque";
     });
 
     container.appendChild(div);
