@@ -18,6 +18,7 @@ function makeGrid(x) {
     const div = document.createElement("div");
     div.className = "row";
     container.style.gridTemplateColumns = `repeat(${x}, 1fr)`;
+    container.style.gridTemplateRows = `repeat(${x}, 1fr)`;
 
     btn.addEventListener("click", function () {
       div.style.backgroundColor = "bisque";
@@ -34,7 +35,7 @@ slider.addEventListener("change", function (e) {
   div = document.querySelectorAll(".row");
   div.forEach((box) => box.remove());
   console.log(sliderValue);
-  input.textContent = sliderValue;
+  input.textContent = `${sliderValue} x ${sliderValue}`;
   makeGrid(sliderValue);
 });
 

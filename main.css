@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 body {
   background-color: antiquewhite;
@@ -36,8 +35,9 @@ header h1 {
 .container {
   display: grid;
   margin: 10px auto;
-  width: 960px;
-  height: 500px;
+  width: 69vw;
+  height: 69vh;
+  box-sizing: content-box;
 }
 .num {
   padding: 10px;
