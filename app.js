@@ -10,6 +10,8 @@ let gridSize = document.querySelector("#gridSize");
 let blackColor = document.querySelector(".blackColor");
 let rainbow = document.querySelector(".rainbow");
 let black = document.querySelector(".classic");
+let slider = document.querySelector("#slider");
+let input = document.querySelector(".num");
 
 function makeGrid(x) {
   for (let i = 0; i < x * x; i++) {
@@ -25,22 +27,15 @@ function makeGrid(x) {
     section.appendChild(container);
   }
 }
+makeGrid(4);
 
-makeGrid(4, 4);
-small.addEventListener("click", function () {
+slider.addEventListener("change", function (e) {
+  let sliderValue = e.target.value;
   div = document.querySelectorAll(".row");
   div.forEach((box) => box.remove());
-  makeGrid(8, 8);
-});
-large.addEventListener("click", function () {
-  div = document.querySelectorAll(".row");
-  div.forEach((box) => box.remove());
-  makeGrid(16, 16);
-});
-largest.addEventListener("click", function () {
-  div = document.querySelectorAll(".row");
-  div.forEach((box) => box.remove());
-  makeGrid(24, 24);
+  console.log(sliderValue);
+  input.textContent = sliderValue;
+  makeGrid(sliderValue);
 });
 
 rainbow.addEventListener("mouseover", function () {

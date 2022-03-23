@@ -29,7 +29,6 @@ header h1 {
 }
 .mode {
   text-align: center;
-
   font-size: 24px;
   padding: 10px;
 }
@@ -37,12 +36,16 @@ header h1 {
 .container {
   display: grid;
   margin: 10px auto;
-  width: 500px;
+  width: 960px;
   height: 500px;
+}
+.num {
+  padding: 10px;
+  font-size: 20px;
 }
 
 .row {
-  min-height: 10px;
+  min-height: 4px;
   border: 1px solid black;
 }
 
